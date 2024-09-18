@@ -30,11 +30,11 @@ export function canvasHandleHoc(element: HTMLCanvasElement) {
     function drawOperatingLine(): void {
         // 先清除 内容
         ctx.clearRect(0, 0, origin.width, origin.height)
-        ctx.fillStyle = 'rgba(0,0,0,0.4)';
-        ctx.fillRect(0, 0, origin.width, initY);
-        ctx.fillRect(0, endY, origin.width, origin.height - initY);
-        ctx.fillRect(0, initY, initX, endY - initY);
-        ctx.fillRect(endX, initY, origin.width - endX, endY - initY);
+        ctx.fillStyle = 'rgba(0,0,0,0.4)'
+        ctx.fillRect(0, 0, origin.width, initY)
+        ctx.fillRect(0, endY, origin.width, origin.height - initY)
+        ctx.fillRect(0, initY, initX, endY - initY)
+        ctx.fillRect(endX, initY, origin.width - endX, endY - initY)
         ctx.restore()
         // 边缘线
         ctx.save()
